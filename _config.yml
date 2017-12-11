@@ -1,0 +1,7 @@
+defaults:
+    - scope:
+        path: test
+      values:
+        assets: /abba
+        layout: test
+        title: ABBA test
