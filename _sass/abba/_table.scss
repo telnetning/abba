@@ -1,0 +1,30 @@
+.table {
+	position: relative;
+
+	a { color: $body-color }
+
+	thead {
+		tr { @extend .thead-dark }
+		a { color: $table-dark-color }
+	}
+
+	.directory { background-color: $table-accent-bg }
+
+	td + td, th + th { text-align: right }
+
+	tbody a {
+		text-decoration: none;
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+
+			left: 0;
+			width: 100%;
+
+			margin-top: -($table-cell-padding);
+			height: ($font-size-base * $line-height-base + 2 * $table-cell-padding);
+		}
+	}
+}
