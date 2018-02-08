@@ -1,7 +1,4 @@
----
-layout:
----
-ABBAURL={{ site.github.url }}
+ABBAURL=https://telnetning.github.io/abba/
 TEMPLATES=default:cerulean:cosmo:cyborg:darkly:flatly:journal:lumen:paper:readable:sandstone:simplex:slate:spacelab:superhero:united:yeti
 
 # Self remove on exit
@@ -64,7 +61,7 @@ ${SUDO} rm -f favicon.ico
 
 # Download the needed files
 ${SUDO} curl -sL ${ABBAURL}/favicon.ico -o favicon.ico && \
-${SUDO} curl -sL ${ABBAURL}/dist/header.shtml -o .abba/header.shtml && \
+${SUDO} lurl -sL ${ABBAURL}/dist/header.shtml -o .abba/header.shtml && \
 ${SUDO} curl -sL ${ABBAURL}/dist/footer.shtml -o .abba/footer.shtml && \
 ${SUDO} curl -sL ${ABBAURL}/dist/error_401.shtml -o .abba/error_401.shtml && \
 ${SUDO} curl -sL ${ABBAURL}/dist/error_403.shtml -o .abba/error_403.shtml && \
